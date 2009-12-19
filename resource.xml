@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<resource version="2.3.0.1" xmlns="http://www.wxwidgets.org/wxxrc">
+    <object class="wxFrame" name="Id_Main_Frame">
+        <style>wxDEFAULT_FRAME_STYLE|wxCAPTION|wxSYSTEM_MENU|wxCLOSE_BOX</style>
+        <size>450,290</size>
+        <title>Pinball Cheat - Kevin Darlington</title>
+        <icon>PinballCheat.ico</icon>
+        <object class="wxMenuBar" name="ID_MENUBAR1">
+            <object class="wxMenu">
+                <label>File</label>
+                <object class="wxMenuItem" name="Id_Menu_Exit">
+                    <label>Exit</label>
+                </object>
+            </object>
+        </object>
+        <object class="wxStatusBar" name="Id_Main_Status">
+            <style>wxST_SIZEGRIP|wxNO_BORDER</style>
+            <fields>1</fields>
+            <widths></widths>
+        </object>
+        <object class="wxPanel" name="ID_PANEL2">
+            <style>wxSTATIC_BORDER|wxTAB_TRAVERSAL</style>
+            <object class="wxBoxSizer">
+                <orient>wxVERTICAL</orient>
+                <object class="sizeritem">
+                    <flag>wxGROW|wxALL</flag>
+                    <border>0</border>
+                    <option>1</option>
+                    <object class="wxNotebook" name="ID_NOTEBOOK1">
+                        <style>wxNB_DEFAULT</style>
+                        <object class="notebookpage">
+                            <label>High scores</label>
+                            <object class="wxPanel" name="ID_PANEL1">
+                                <style>wxNO_BORDER|wxTAB_TRAVERSAL</style>
+                                <object class="wxBoxSizer">
+                                    <orient>wxVERTICAL</orient>
+                                    <object class="sizeritem">
+                                        <flag>wxGROW|wxALL</flag>
+                                        <border>0</border>
+                                        <object class="wxFlexGridSizer">
+                                            <cols>3</cols>
+                                            <rows>6</rows>
+                                            <vgap>0</vgap>
+                                            <hgap>0</hgap>
+                                            <growablecols>1</growablecols>
+                                            <object class="sizeritem">
+                                                <flag>wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL|wxALL|wxADJUST_MINSIZE</flag>
+                                                <border>5</border>
+                                                <object class="wxStaticText" name="wxID_STATIC">
+                                                    <label>Rank</label>
+                                                </object>
+                                            </object>
+                                            <object class="sizeritem">
+                                                <flag>wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL|wxALL|wxADJUST_MINSIZE</flag>
+                                                <border>5</border>
+                                                <object class="wxStaticText" name="wxID_STATIC">
+                                                    <label>Name</label>
+                                                </object>
+                                            </object>
+                                            <object class="sizeritem">
+                                                <flag>wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL|wxALL|wxADJUST_MINSIZE</flag>
+                                                <border>5</border>
+                                                <object class="wxStaticText" name="wxID_STATIC">
+                                                    <label>Score</label>
+                                                </object>
+                                            </object>
+                                            <object class="sizeritem">
+                                                <flag>wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL|wxALL|wxADJUST_MINSIZE</flag>
+                                                <border>5</border>
+                                                <object class="wxStaticText" name="wxID_STATIC">
+                                                    <label>1</label>
+                                                </object>
+                                            </object>
+                                            <object class="sizeritem">
+                                                <flag>wxGROW|wxALIGN_CENTER_VERTICAL|wxALL</flag>
+                                                <border>5</border>
+                                                <object class="wxTextCtrl" name="Id_HighScore_Name1_Txt">
+                                                    <size>200,-1</size>
+                                                    <style>wxSTATIC_BORDER</style>
+                                                </object>
+                                            </object>
+                                            <object class="sizeritem">
+                                                <flag>wxGROW|wxALIGN_CENTER_VERTICAL|wxALL</flag>
+                                                <border>5</border>
+                                                <object class="wxTextCtrl" name="Id_HighScore_Score1_Txt">
+                                                    <size>120,-1</size>
+                                                    <style>wxSTATIC_BORDER</style>
+                                                </object>
+                                            </object>
+                                            <object class="sizeritem">
+                                                <flag>wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL|wxALL|wxADJUST_MINSIZE</flag>
+                                                <border>5</border>
+                                                <object class="wxStaticText" name="wxID_STATIC">
+                                                    <label>2</label>
+                                                </object>
+                                            </object>
+                                            <object class="sizeritem">
+                                                <flag>wxGROW|wxALIGN_CENTER_VERTICAL|wxALL</flag>
+                                                <border>5</border>
+                                                <object class="wxTextCtrl" name="Id_HighScore_Name2_Txt">
+                                                    <size>200,-1</size>
+                                                    <style>wxSTATIC_BORDER</style>
+                                                </object>
+                                            </object>
+                                            <object class="sizeritem">
+                                                <flag>wxGROW|wxALIGN_CENTER_VERTICAL|wxALL</flag>
+                                                <border>5</border>
+                                                <object class="wxTextCtrl" name="Id_HighScore_Score2_Txt">
+                                                    <size>120,-1</size>
+                                                    <style>wxSTATIC_BORDER</style>
+                                                </object>
+                                            </object>
+                                            <object class="sizeritem">
+                                                <flag>wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL|wxALL|wxADJUST_MINSIZE</flag>
+                                                <border>5</border>
+                                                <object class="wxStaticText" name="wxID_STATIC">
+                                                    <label>3</label>
+                                                </object>
+                                            </object>
+                                            <object class="sizeritem">
+                                                <flag>wxGROW|wxALIGN_CENTER_VERTICAL|wxALL</flag>
+                                                <border>5</border>
+                                                <object class="wxTextCtrl" name="Id_HighScore_Name3_Txt">
+                                                    <size>200,-1</size>
+                                                    <style>wxSTATIC_BORDER</style>
+                                                </object>
+                                            </object>
+                                            <object class="sizeritem">
+                                                <flag>wxGROW|wxALIGN_CENTER_VERTICAL|wxALL</flag>
+                                                <border>5</border>
+                                                <object class="wxTextCtrl" name="Id_HighScore_Score3_Txt">
+                                                    <size>120,-1</size>
+                                                    <style>wxSTATIC_BORDER</style>
+                                                </object>
+                                            </object>
+                                            <object class="sizeritem">
+                                                <flag>wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL|wxALL|wxADJUST_MINSIZE</flag>
+                                                <border>5</border>
+                                                <object class="wxStaticText" name="wxID_STATIC">
+                                                    <label>4</label>
+                                                </object>
+                                            </object>
+                                            <object class="sizeritem">
+                                                <flag>wxGROW|wxALIGN_CENTER_VERTICAL|wxALL</flag>
+                                                <border>5</border>
+                                                <object class="wxTextCtrl" name="Id_HighScore_Name4_Txt">
+                                                    <size>200,-1</size>
+                                                    <style>wxSTATIC_BORDER</style>
+                                                </object>
+                                            </object>
+                                            <object class="sizeritem">
+                                                <flag>wxGROW|wxALIGN_CENTER_VERTICAL|wxALL</flag>
+                                                <border>5</border>
+                                                <object class="wxTextCtrl" name="Id_HighScore_Score4_Txt">
+                                                    <size>120,-1</size>
+                                                    <style>wxSTATIC_BORDER</style>
+                                                </object>
+                                            </object>
+                                            <object class="sizeritem">
+                                                <flag>wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL|wxALL|wxADJUST_MINSIZE</flag>
+                                                <border>5</border>
+                                                <object class="wxStaticText" name="wxID_STATIC">
+                                                    <label>5</label>
+                                                </object>
+                                            </object>
+                                            <object class="sizeritem">
+                                                <flag>wxGROW|wxALIGN_CENTER_VERTICAL|wxALL</flag>
+                                                <border>5</border>
+                                                <object class="wxTextCtrl" name="Id_HighScore_Name5_Txt">
+                                                    <size>200,-1</size>
+                                                    <style>wxSTATIC_BORDER</style>
+                                                </object>
+                                            </object>
+                                            <object class="sizeritem">
+                                                <flag>wxGROW|wxALIGN_CENTER_VERTICAL|wxALL</flag>
+                                                <border>5</border>
+                                                <object class="wxTextCtrl" name="Id_HighScore_Score5_Txt">
+                                                    <size>120,-1</size>
+                                                    <style>wxSTATIC_BORDER</style>
+                                                </object>
+                                            </object>
+                                        </object>
+                                    </object>
+                                    <object class="sizeritem">
+                                        <flag>wxGROW|wxALL</flag>
+                                        <border>5</border>
+                                        <object class="wxStaticLine" name="ID_STATICLINE1">
+                                            <style>wxLI_HORIZONTAL</style>
+                                        </object>
+                                    </object>
+                                    <object class="sizeritem">
+                                        <flag>wxGROW|wxALL|wxFIXED_MINSIZE</flag>
+                                        <border>0</border>
+                                        <object class="wxBoxSizer">
+                                            <orient>wxHORIZONTAL</orient>
+                                            <object class="sizeritem">
+                                                <flag>wxALIGN_BOTTOM|wxALL</flag>
+                                                <border>3</border>
+                                                <object class="wxButton" name="Id_HighScore_Menu_Cmd">
+                                                    <size>30,-1</size>
+                                                    <label>&gt;&gt;</label>
+                                                </object>
+                                            </object>
+                                            <object class="spacer">
+                                                <flag>wxALIGN_CENTER_VERTICAL|wxALL</flag>
+                                                <border>5</border>
+                                                <option>1</option>
+                                                <size>5,5</size>
+                                            </object>
+                                            <object class="sizeritem">
+                                                <flag>wxALIGN_BOTTOM|wxALL</flag>
+                                                <border>3</border>
+                                                <object class="wxButton" name="Id_HighScore_Save_Cmd">
+                                                    <label>Save</label>
+                                                </object>
+                                            </object>
+                                            <object class="sizeritem">
+                                                <flag>wxALIGN_BOTTOM|wxALL</flag>
+                                                <border>3</border>
+                                                <object class="wxButton" name="Id_HighScore_Undo_Cmd">
+                                                    <label>Undo</label>
+                                                </object>
+                                            </object>
+                                        </object>
+                                    </object>
+                                </object>
+                            </object>
+                        </object>
+                        <object class="notebookpage">
+                            <label>Preferences</label>
+                            <object class="wxPanel" name="ID_PANEL">
+                                <style>wxNO_BORDER|wxTAB_TRAVERSAL</style>
+                                <object class="wxBoxSizer">
+                                    <orient>wxVERTICAL</orient>
+                                    <object class="sizeritem">
+                                        <flag>wxGROW|wxALL</flag>
+                                        <border>0</border>
+                                        <option>1</option>
+                                        <object class="wxTreebook" name="ID_TREEBOOK1">
+                                            <style>wxBK_DEFAULT|wxNO_BORDER</style>
+                                            <object class="treebookpage">
+                                                <label>High scores</label>
+                                                <object class="wxPanel" name="ID_PANEL4">
+                                                    <style>wxNO_BORDER|wxTAB_TRAVERSAL</style>
+                                                    <object class="wxBoxSizer">
+                                                        <orient>wxVERTICAL</orient>
+                                                        <object class="sizeritem">
+                                                            <flag>wxGROW|wxALL</flag>
+                                                            <border>5</border>
+                                                            <object class="wxRadioBox" name="Id_HighScore_Root_Rdo">
+                                                                <style>wxRA_SPECIFY_ROWS</style>
+                                                                <label></label>
+                                                                <dimension>1</dimension>
+                                                                <selection>0</selection>
+                                                                <content>
+                                                                    <item>&amp;HKEY_CURRENT_USER</item>
+                                                                    <item>&amp;HKEY_LOCAL_MACHINE</item>
+                                                                </content>
+                                                            </object>
+                                                        </object>
+                                                        <object class="sizeritem">
+                                                            <flag>wxGROW|wxALL</flag>
+                                                            <border>5</border>
+                                                            <object class="wxTextCtrl" name="Id_HighScore_Path_Txt">
+                                                                <value>Software\Microsoft\Plus!\Pinball\SpaceCadet</value>
+                                                            </object>
+                                                        </object>
+                                                        <object class="sizeritem">
+                                                            <flag>wxGROW|wxALL</flag>
+                                                            <border>0</border>
+                                                            <object class="wxBoxSizer">
+                                                                <orient>wxHORIZONTAL</orient>
+                                                                <object class="spacer">
+                                                                    <flag>wxALIGN_CENTER_VERTICAL|wxALL</flag>
+                                                                    <border>5</border>
+                                                                    <option>1</option>
+                                                                    <size>5,5</size>
+                                                                </object>
+                                                                <object class="sizeritem">
+                                                                    <flag>wxALIGN_CENTER_VERTICAL|wxALL</flag>
+                                                                    <border>5</border>
+                                                                    <object class="wxButton" name="Id_HighScore_Retrieve_Cmd">
+                                                                        <label>Retrieve</label>
+                                                                    </object>
+                                                                </object>
+                                                            </object>
+                                                        </object>
+                                                    </object>
+                                                </object>
+                                            </object>
+                                        </object>
+                                    </object>
+                                </object>
+                            </object>
+                        </object>
+                        <object class="notebookpage">
+                            <label>About</label>
+                            <object class="wxPanel" name="ID_PANEL3">
+                                <style>wxNO_BORDER|wxTAB_TRAVERSAL</style>
+                                <object class="wxBoxSizer">
+                                    <orient>wxVERTICAL</orient>
+                                    <object class="sizeritem">
+                                        <flag>wxALIGN_CENTER_HORIZONTAL|wxALL</flag>
+                                        <border>5</border>
+                                        <option>1</option>
+                                        <object class="wxBoxSizer">
+                                            <orient>wxHORIZONTAL</orient>
+                                            <object class="sizeritem">
+                                                <flag>wxALIGN_CENTER_VERTICAL|wxALL|wxADJUST_MINSIZE</flag>
+                                                <border>5</border>
+                                                <object class="wxStaticText" name="wxID_STATIC">
+                                                    <style>wxALIGN_CENTRE</style>
+                                                    <label>Made by Kevin Darlington to cheat at Window's Pinball</label>
+                                                </object>
+                                            </object>
+                                        </object>
+                                    </object>
+                                </object>
+                            </object>
+                        </object>
+                    </object>
+                </object>
+            </object>
+        </object>
+    </object>
+    <object class="wxMenu" name="Id_HighScore_Menu">
+        <object class="wxMenuItem" name="Id_HighScore_Shiftup_Cmd">
+            <label>Shift up</label>
+        </object>
+        <object class="wxMenuItem" name="Id_HighScore_Shiftdown_Cmd">
+            <label>Shift down</label>
+        </object>
+        <object class="separator">
+        </object>
+        <object class="wxMenuItem" name="Id_HighScore_Reset_Cmd">
+            <label>Reset</label>
+        </object>
+        <object class="separator">
+        </object>
+        <object class="wxMenuItem" name="Id_HighScore_SaveToFile_Cmd">
+            <label>Save to file</label>
+        </object>
+        <object class="wxMenuItem" name="Id_HighScore_LoadFromFile_Cmd">
+            <label>Load from file</label>
+        </object>
+    </object>
+</resource>
